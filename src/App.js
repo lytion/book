@@ -8,7 +8,7 @@ import TimesBomb from './components/TimesBomb/TimesBomb';
 import MazeAdventure from './components/MazeAdventure/MazeAdventure';
 
 const App = () => (
-	<div style={{width: 'auto', height: 'auto'}}>
+	<div style={{width: 'auto', height: 'auto', background: '#0F1923'}}>
 		<Router>
 			<Route path="/" exact component={Root}></Route>
 			<Route path="/werewolf" exact component={Werewolf}></Route>
