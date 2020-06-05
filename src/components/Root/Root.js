@@ -43,7 +43,7 @@ const Root = () => {
 					<div className={"description_container"}>
 						<div style={{color: "#768079", display: 'contents'}}>
 							<span className={"description_title"} style={{fontSize: '5vw'}}>Simon Bauchet</span>
-							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Je suis étudiant en 4ème année à Epitech.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Actuellement étudiant en 4ème année à Epitech.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Epitech est une école de programmation informatique avec une pédagogie par projet, ce qui nous permet d'avoir une expérience technique dès notre première année.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>J'ai réalisé ce site afin de présenter les différents projets que j'ai réalisé cette année pendant mon temps libre.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Je me passionne de créer du nouveau contenu en tout genre grâce au développement.</span>
@@ -64,8 +64,10 @@ const Root = () => {
 								<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>NodeJs | React</span>
 							</div>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Projet réalisé en 2 semaines pendant mon temps libre.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Ce projet m'a permis d'utiliser énormément de librairies en React, la partie la plus difficile fut d'utiliser correctement les sockets pour ne pas avoir de problèmes d'optimisations.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Le but de ce projet est de pouvoir jouer au jeux de société Time Bomb n'importe où.</span>
-							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Je n'ai pas réalisé d'application pour ce projet car je veux que tout le monde puisse y jouer sans rien installer, ainsi toutes personnes peut se joindre en soirée à une partie par example.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Ce jeux se joue principalement à l'oral, il était donc important de faire une interface la plus claire possible afin de se concentrer sur sa stratégie.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Je n'ai pas réalisé d'application pour ce projet car je veux que tout le monde puisse y jouer sans rien installer, ainsi toutes personnes peut se joindre à une partie en soirée par example.</span>
 						</div>
 					</div>
 				</div>
@@ -98,6 +100,9 @@ const Root = () => {
 								<div style={{display: "inline-block"}}>
 									<ReactPlayer className={(isSmallScreenLandscapeVideo ? "video_container_landscape_phone" : "video_container_phone")}  url={'https://youtu.be/tVsqJKOjwwg'} config={{youtube: {embedOptions: {width: '100%', height: '100%'}, playerVars: {showinfo: 0}}}} playing={true} loop={true}/>
 								</div>
+							</div>
+							<div className={"background_text_container"}>
+								<span className={"background_text"} style={{color: '#768079', fontSize: (isSmallScreenPortraitVideo ? '35vw' : '20vw')}}>Maze Adventure</span>
 							</div>
 							<div style={{marginBottom: 30}}>
 								<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline'}}>Technologie utilisées:</span>

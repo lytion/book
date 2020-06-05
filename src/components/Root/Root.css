@@ -24,9 +24,6 @@
     /*color: #eeeeee;*/
     width: fit-content;
     border: none;
-    transition-duration: 0.4s;
-    transition-property: all;
-    transition-timing-function: ease-out;
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
@@ -40,6 +37,9 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease-out;
 }
 
 .span_headband:hover {
