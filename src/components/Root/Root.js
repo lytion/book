@@ -36,15 +36,28 @@ const Root = () => {
 				<span className={"span_headband"}><a href={"#werewolf"} className={"text_headband"}>Werewolf</a></span>
 				<span className={"span_headband"}><a href={"#mazeadventure"} className={"text_headband"}>Maze Adventure</a></span>
 			</div>
+
 			<div className={"content_container_phone"}>
+
+				<div id={"profil"} style={div_container_phone("#FFF")}>
+					<div className={"description_container"}>
+						<div style={{color: "#768079", display: 'contents'}}>
+							<span className={"description_title"} style={{fontSize: '5vw'}}>Simon Bauchet</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Je suis étudiant en 4ème année à Epitech.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Epitech est une école de programmation informatique avec une pédagogie par projet, ce qui nous permet d'avoir une expérience technique dès notre première année.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>J'ai réalisé ce site afin de présenter les différents projets que j'ai réalisé cette année pendant mon temps libre.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Je me passionne de créer du nouveau contenu en tout genre grâce au développement.</span>
+						</div>
+					</div>
+				</div>
+
 				<div id={"timebomb"} style={div_container_phone("#FF4655")}>
 					<ReactPlayer className={(isSmallScreenPortraitVideo ? "video_container_portrait_phone" : "video_container_portrait")} url={'https://youtu.be/hCzs0sIr5lI'} config={{youtube: {embedOptions: {width: '100%', height: '100%'}, playerVars: {showinfo: 0}}}} playing={true} loop={true}/>
-					{/*<div style={{display: 'grid'}}>*/}
-					{/*	<span className={"background_text"}>Time</span>*/}
-					{/*	<span className={"background_text"}>Bomb</span>*/}
-					{/*</div>*/}
 					<div className={"description_container"}>
 						<div style={{color: "#FFF", display: 'contents'}}>
+							<div className={"background_text_container"}>
+								<span className={"background_text"} style={{fontSize: (isSmallScreenPortraitVideo ? '35vw' : '20vw')}}>Time Bomb</span>
+							</div>
 							<span className={"description_title"}>Time Bomb</span>
 							<div style={{marginBottom: 30}}>
 								<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline'}}>Technologie utilisées:</span>
@@ -61,7 +74,8 @@ const Root = () => {
 					<ReactPlayer className={(isSmallScreenPortraitVideo ? "video_container_portrait_phone" : "video_container_portrait")} url={'https://youtu.be/CGfeq1l48JI'} config={{youtube: {embedOptions: {width: '100%', height: '100%'}, playerVars: {showinfo: 0}}}} playing={true} loop={true}/>
 					<div className={"description_container"}>
 						<div style={{color: "#768079", display: 'contents'}}>
-							<span className={"description_title"}>WereWolf / Loup Garou</span>
+							<span className={"description_title"} style={{textAlign: (isSmallScreenPortraitVideo ? 'center' : 'start')}}>WereWolf / </span>
+							<span className={"description_title"}>Loup Garou</span>
 							<div style={{marginBottom: 30}}>
 								<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline'}}>Technologie utilisées:</span>
 								<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>NodeJs | React</span>
