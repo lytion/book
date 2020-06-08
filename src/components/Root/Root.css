@@ -14,7 +14,7 @@
     left: 0;
     overflow: hidden;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
 }
@@ -31,8 +31,8 @@
     horiz-align: center;
 }
 
-.span_headband {
-    height: 100%;
+.button_headband {
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,9 +40,16 @@
     transition-duration: 0.4s;
     transition-property: all;
     transition-timing-function: ease-out;
+    background: none;
+    border-width: 0;
+    color: #ffffff;
+    width: 20%;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 2px;
 }
 
-.span_headband:hover {
+.button_headband:hover {
     background: #FF4655;
     transition-duration: 0.4s;
     transition-delay: 0s;
@@ -117,6 +124,7 @@
     float: left;
     position: relative;
     display: grid;
+    margin-top: -5%
 }
 
 .background_text {
@@ -153,6 +161,36 @@
     font-size: 1rem;
     margin-bottom: 20px;
     margin-left: 15px;
+}
+
+.button_test_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.button_test {
+    width: fit-content;
+    padding: 10px;
+    border-width: 0;
+    border-radius: 10px 0 10px 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    color: #768079;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.button_test:hover {
+    background: #FF4655;
+    color: #fff;
+    transition-duration: 0.4s;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-timing-function: ease;
 }
 
 

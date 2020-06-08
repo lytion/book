@@ -24,17 +24,17 @@ const Root = () => {
 
 	function div_container_phone(backgroundColor) {
 		if (isSmallScreenLandscapeVideo)
-			return {textAlign: 'center', position: 'relative', height: 'auto', minHeight: '100%', width: window.innerWidth, overflow: 'auto', paddingTop: 30, paddingBottom: 30, backgroundColor: backgroundColor}
+			return {textAlign: 'center', position: 'relative', height: 'auto', minHeight: '100%', width: window.innerWidth, overflow: 'auto', paddingTop: 30, paddingBottom: 30, backgroundColor: backgroundColor, overflowY: 'hidden'}
 		else
-			return {textAlign: 'center', position: 'relative', height: 'auto', minHeight: '100%', width: window.innerWidth, overflow: 'auto', paddingTop: 30, paddingBottom: 30, backgroundColor: backgroundColor}
+			return {textAlign: 'center', position: 'relative', height: 'auto', minHeight: '100%', width: window.innerWidth, overflow: 'auto', paddingTop: 30, paddingBottom: 30, backgroundColor: backgroundColor, overflowY: 'hidden'}
 	}
 
 	return (
 		<div className={"container_background"} style={{width: window.innerWidth}}>
 			<div className={"container_headband"}>
-				<span className={"span_headband"}><a href={"#timebomb"} className={"text_headband"} style={{marginRight: '0%'}}>Time Bomb</a></span>
-				<span className={"span_headband"}><a href={"#werewolf"} className={"text_headband"}>Werewolf</a></span>
-				<span className={"span_headband"}><a href={"#mazeadventure"} className={"text_headband"}>Maze Adventure</a></span>
+				<button style={{fontSize: (isSmallScreenLandscapeVideo ? 10 : 20)}} className={"button_headband"} onClick={() => {window.location.href = "#timebomb"}}>Time Bomb</button>
+				<button style={{fontSize: (isSmallScreenLandscapeVideo ? 10 : 20)}} className={"button_headband"} onClick={() => {window.location.href = "#werewolf"}}>Werewolf</button>
+				<button style={{fontSize: (isSmallScreenLandscapeVideo ? 10 : 20)}} className={"button_headband"} onClick={() => {window.location.href = "#mazeadventure"}}>Maze Adventure</button>
 			</div>
 
 			<div className={"content_container_phone"}>
@@ -95,14 +95,14 @@ const Root = () => {
 				<div id={"mazeadventure"} style={div_container_phone("#0F1923")}>
 					<div className={"description_container"}>
 						<div style={{color: "#FFF", display: 'contents'}}>
-							<span className={"description_title"}>MazeAdventure</span>
+							<span className={"description_title"}>Maze Adventure</span>
 							<div style={{textAlign: 'center', marginBottom: 30}}>
 								<div style={{display: "inline-block"}}>
 									<ReactPlayer className={(isSmallScreenLandscapeVideo ? "video_container_landscape_phone" : "video_container_phone")}  url={'https://youtu.be/tVsqJKOjwwg'} config={{youtube: {embedOptions: {width: '100%', height: '100%'}, playerVars: {showinfo: 0}}}} playing={true} loop={true}/>
 								</div>
 							</div>
-							<div className={"background_text_container"}>
-								<span className={"background_text"} style={{color: '#768079', fontSize: (isSmallScreenPortraitVideo ? '35vw' : '20vw')}}>Maze Adventure</span>
+							<div className={"button_test_container"}>
+								<button className={"button_test"} onClick={() => {window.open("https://simmer.io/@cryan/mazeadventure")}}>Tester Maze Adventure</button>
 							</div>
 							<div style={{marginBottom: 30}}>
 								<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline'}}>Technologie utilisées:</span>
@@ -110,13 +110,13 @@ const Root = () => {
 							</div>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Projet en cours de réalisation.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Le but du jeux est de trouver la sortie du labyrinthe afin de récolter tous les trésors</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline', marginTop: 30}}>Informations sur le jeux: </span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Il y a un système de loot, et de build afin d'aider le joueur dans sa quête.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Le jeux est en cours de réalisation, c'est pourquoi il peut y avoir des bugs et des features manquantes.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Dans le jeux, un carré vert représente la sortie, celui de couleur bleu représente la clé de la salle secrète, le carré rouge représente la salle secrète lorsqu'elle est fermée, celle-ci passe au orange une fois la clé récupérée.</span>
-							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline'}}>Ce que j'aime:</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline', marginTop: 30}}>Ce que j'aime:</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>- J'ai designé moi même le système de loot afin de pouvoir gérer le taux de drop de chaque item.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>- Le système de build, autant la conception pour réaliser quelque chose d'équilibré que la réalisation qui réserve ses petits imprévus !</span>
-							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Pour le tester &nbsp; <a href={'https://simmer.io/@cryan/mazeadventure'} target={'_blank'}> cliquez ici</a></span>
 						</div>
 					</div>
 				</div>
