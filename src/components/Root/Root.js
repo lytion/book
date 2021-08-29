@@ -10,7 +10,6 @@ const Root = () => {
 	const [isSmallScreenLandscapeVideo, setIsSmallScreenLandscapeVideo] = useState(window.innerWidth < 900 ? true : false);
 
 	function resize() {
-		console.log(window.innerWidth);
 		if (window.innerWidth < 820)
 			setIsSmallScreenPortraitVideo(true);
 		else
