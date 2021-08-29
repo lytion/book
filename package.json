@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:netlify": "npm install && npm run buil",
+    "build:netlify": "npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "netlify deploy --prod"
