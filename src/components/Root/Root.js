@@ -35,6 +35,7 @@ const Root = () => {
 				<button style={{fontSize: (isSmallScreenLandscapeVideo ? 10 : 20)}} className={"button_headband"} onClick={() => {window.location.href = "#timebomb"}}>Time Bomb</button>
 				<button style={{fontSize: (isSmallScreenLandscapeVideo ? 10 : 20)}} className={"button_headband"} onClick={() => {window.location.href = "#werewolf"}}>Werewolf</button>
 				<button style={{fontSize: (isSmallScreenLandscapeVideo ? 10 : 20)}} className={"button_headband"} onClick={() => {window.location.href = "#mazeadventure"}}>Maze Adventure</button>
+        <button style={{fontSize: (isSmallScreenLandscapeVideo ? 10 : 20)}} className={"button_headband"} onClick={() => {window.location.href = "#toodoux"}}>Too Doux</button>
 			</div>
 
 			<div className={"content_container_phone"}>
@@ -43,9 +44,9 @@ const Root = () => {
 					<div className={"description_container"}>
 						<div style={{color: "#768079", display: 'contents'}}>
 							<span className={"description_title"} style={{fontSize: '5vw'}}>Simon Bauchet</span>
-							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Actuellement étudiant en 4ème année à Epitech.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Actuellement étudiant en 5ème année à Epitech.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Epitech est une école de programmation informatique avec une pédagogie par projet, ce qui nous permet d'avoir une expérience technique dès notre première année.</span>
-							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>J'ai réalisé ce site afin de présenter les différents projets que j'ai réalisé cette année pendant mon temps libre.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>J'ai réalisé ce site pendant le confinement de 2020 afin de présenter les différents projets que j'ai réalisé pendant mon temps libre.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Je me passionne de créer du nouveau contenu en tout genre grâce au développement.</span>
 						</div>
 					</div>
@@ -108,7 +109,7 @@ const Root = () => {
 								<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline'}}>Technologie utilisées:</span>
 								<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Unity | C#</span>
 							</div>
-							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Projet en cours de réalisation.</span>
+							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Projet non terminé réalisé pendant le confinement de 2020.</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Le but du jeux est de trouver la sortie du labyrinthe afin de récolter tous les trésors</span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline', marginTop: 30}}>Informations sur le jeux: </span>
 							<span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Il y a un système de loot, et de build afin d'aider le joueur dans sa quête.</span>
@@ -120,6 +121,29 @@ const Root = () => {
 						</div>
 					</div>
 				</div>
+
+        <div id={"toodoux"} style={div_container_phone("#FFF")}>
+          <span className={"description_title"} style={{color: "#768079"}}>Too Doux</span>
+          <div style={{textAlign: 'center', marginBottom: 30}}>
+            <div style={{display: "inline-block"}}>
+              <ReactPlayer className={(isSmallScreenLandscapeVideo ? "video_container_landscape_phone" : "video_container_phone")}  url={'https://youtu.be/uWGEXL-Wjns'} config={{youtube: {embedOptions: {width: '100%', height: '100%'}, playerVars: {showinfo: 0}}}} playing={true} loop={true}/>
+            </div>
+          </div>
+          <div className={"description_container"}>
+            <div style={{color: "#768079", display: 'contents'}}>
+              <div style={{marginBottom: 30}}>
+                <span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")} style={{textDecoration: 'underline'}}>Technologie utilisées:</span>
+                <span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Angular | Ionic | TailwindCSS | Firebase</span>
+              </div>
+              <span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Projet en cours de développement sur mon temps libre.</span>
+              <span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Le but de ce projet est d'avoir un éditeur de note complet et utilisable aussi sur desktop que sur mobile.
+              Le but est aussi de pouvoir se débarrasser des notices et garanties en les centralisant au même endroit au format numérique.</span>
+              <span className={(isSmallScreenPortraitVideo ? "description_text_phone" : "description_text")}>Ce projet est un challenge technique car je recréer un éditeur de texte à partir de zéro
+              afin d'être entièrement libre sur sa personnalisation.</span>
+            </div>
+          </div>
+        </div>
+
 			</div>
 		</div>
 	)
